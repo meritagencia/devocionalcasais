@@ -737,19 +737,11 @@ p {
 }
 
 @media (min-width: 861px) {
-  .book-gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    overflow-x: visible;
-    padding-bottom: 0;
-  }
   .book-gallery img {
-    flex: none;
-    max-width: 100%;
-    width: 100%;
+    flex: 0 0 350px;
   }
   .book-gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 }
 
