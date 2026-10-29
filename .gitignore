@@ -1,0 +1,18 @@
+# System
+.DS_Store
+
+# Temporary & script files
+*.py
+*.txt
+*.json
+*.pdf
+*.zip
+
+# App/Editor scripts not used on the landing page
+app.js
+styles.css
+gerador.html
+parse_and_sort.js
+
+# Source PNG images (all site images converted to WebP)
+*.png
