@@ -22,6 +22,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -30,6 +32,9 @@ body {
   color: var(--ink);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
 }
 
 img {
@@ -45,6 +50,8 @@ a {
 .container {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Typography */
@@ -217,11 +224,16 @@ p {
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
   white-space: nowrap;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 @media (max-width: 860px) {
   .button {
-    padding: 0 16px;
+    padding: 0 10px;
+    font-size: clamp(11px, 3.5vw, 15px);
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -572,6 +584,17 @@ p {
   border-radius: 16px;
   box-shadow: var(--shadow);
   position: relative;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 860px) {
+  .offer-card {
+    padding: 28px 14px;
+    border-radius: 14px;
+    max-width: 100%;
+    overflow: hidden;
+  }
 }
 
 .badge {
@@ -660,6 +683,8 @@ p {
   font-size: 12px;
   color: var(--text-muted);
   margin-top: 16px;
+  word-break: break-word;
+  max-width: 100%;
 }
 
 /* FAQ */
@@ -708,6 +733,8 @@ p {
 .book-gallery-container {
   position: relative;
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .book-gallery {
@@ -776,11 +803,11 @@ p {
 }
 
 .gallery-nav-btn.prev-btn {
-  left: -20px;
+  left: 8px;
 }
 
 .gallery-nav-btn.next-btn {
-  right: -20px;
+  right: 8px;
 }
 
 @media (max-width: 860px) {
